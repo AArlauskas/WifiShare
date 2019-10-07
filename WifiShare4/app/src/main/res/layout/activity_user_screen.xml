@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.wifishare.UserScreen">
+    tools:context="com.example.wifishare.UserScreen.UserScreen">
 
     <TextView
         android:id="@+id/textViewHello"
@@ -69,13 +69,49 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textViewMapLocation"
+        android:id="@+id/textAddFriend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location For maps"
+        android:layout_marginTop="80dp"
+        android:text="Add a friend to share private Wi-Fi:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+
+    <Button
+        android:id="@+id/buttonAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="type here..."
+        android:text="Add Friend!"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddWifi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textAddFriend"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <EditText
+        android:id="@+id/editTextAddFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/buttonAddWifi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHello" />
+        app:layout_constraintTop_toBottomOf="@+id/textAddFriend"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAddFriend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddFriend" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

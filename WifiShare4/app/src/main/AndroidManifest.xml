@@ -29,13 +29,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name="com.example.wifishare.WiFiDetails"></activity>
-        <activity android:name="com.example.wifishare.WifiListScreen" />
-        <activity android:name="com.example.wifishare.AddWifiScreen" />
-        <activity android:name="com.example.wifishare.UserScreen" />
-        <activity android:name="com.example.wifishare.RegistrationScreen" />
-        <activity android:name="com.example.myapplication.MapsActivity"/>
-        <activity android:name="com.example.wifishare.LoginScreen">
+        <activity android:name="com.example.wifishare.WiFiLists.WiFiDetails"></activity>
+        <activity android:name="com.example.wifishare.WiFiLists.WifiListScreen" />
+        <activity android:name="com.example.wifishare.UserScreen.AddWifiScreen" />
+        <activity android:name="com.example.wifishare.UserScreen.UserScreen" />
+        <activity android:name="com.example.wifishare.Login.RegistrationScreen" />
+        <activity android:name="com.example.myapplication.com.example.Maps.MapsActivity"/>
+        <activity android:name="com.example.wifishare.Login.LoginScreen">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
