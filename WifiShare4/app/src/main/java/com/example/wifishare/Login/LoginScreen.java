@@ -31,7 +31,7 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         Button buttonSignIn = findViewById(R.id.buttonSignIn);
 
         buttonSignIn.setOnClickListener(new View.OnClickListener() {
